@@ -74,7 +74,9 @@ def test_find_suitable_user():
 # "Open Browser [Chrome]"
 
 def make_string_of_func_name_and_args(func, *args):
-    return f"{func.__name__.replace('_', ' ').title()} [{', '.join(args)}]"
+    string = f"{func.__name__.replace('_', ' ').title()} [{', '.join(args)}]"
+    print(string)
+    return string
 
 
 def test_readable_function():
